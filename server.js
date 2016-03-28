@@ -5,7 +5,7 @@ var server = http.createServer();
 var primus = new Primus(server);
 var port = process.env.PORT || 80;
 var id = require('os').hostname();
-var data = process.env.TEST_DATA || 'test_data'
+var data = process.env.TEST_DATA || 'fb2 data'
 server.listen(port);
 console.log('id:', id, 'port', port);
 
