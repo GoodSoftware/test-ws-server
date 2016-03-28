@@ -10,7 +10,7 @@ server.listen(port);
 console.log('id:', id, 'port', port);
 
 server.on('request', function (req, res) {
-    res.end(data + ' url: ' req.url)
+    res.end(data + ' url: ' + req.url)
 })
 
 primus.on("connection", function (spark) {
