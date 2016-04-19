@@ -12,6 +12,6 @@ console.log('id:', id, 'port', port);
 primus.on("connection", function (spark) {
   console.log('connected = ' + id);
   setInterval(function() {
-    spark.write("I AM A BRANCH ID: " + id);
+    spark.write("I AM BRANCH ID: " + id);
   }, 1000);
 });
