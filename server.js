@@ -16,6 +16,6 @@ server.on('request', function (req, res) {
 primus.on("connection", function (spark) {
   console.log('connected = ' + id);
   setInterval(function() {
-    spark.write("branch: " + new Date().getTime() +" ID: " + id);
+    spark.write("branch1111: " + new Date().getTime() +" ID: " + id);
   }, 1000);
 });
